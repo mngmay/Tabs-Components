@@ -59,4 +59,8 @@ class TabItem {
 
 */
 
-links = document.querySelectorAll();
+links = document.querySelectorAll(".tabs-link");
+
+links.forEach(function(link){
+  return new TabLink(link);
+});
